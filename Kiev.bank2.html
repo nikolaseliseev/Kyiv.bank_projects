@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <title>Kyiv.bank</title>
+    <link rel = "stylesheet" href = "CSS_for_Kiev.bank.css">
+</head>
+<body>
+    <style>
+        .box {
+            font-size: 24px;
+            /* padding-top: 8px;
+            padding-bottom: 8px; */
+            padding: 8px;
+        }
+        .box.first {
+            background-color: #FFD200;
+            height: 220px;
+            width: 380px;
+            border: 2px solid black;
+        }
+        .box.second {
+            background-color: rgb(3, 157, 3);
+            height: 220px;
+            width: 380px;
+            border: 2px solid black;
+        }
+        .box.third {
+            background-color: #004CFE;
+            height: 215px;
+            width: 750px;
+            border: 2px solid black;
+            position: center;
+        }
+        body {
+            background: url(https://html5book.ru/wp-content/uploads/2015/07/background39.png);
+        }
+        .floating-button {
+            text-decoration: none;
+            display: inline-block;
+            width: 210px;
+            height: 40px;
+            left: 500;
+            line-height: 45px;
+            border-radius: 45px;
+            margin: 10px 20px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 11px;
+            text-align: center;
+            letter-spacing: 3px;
+            font-weight: 600;
+            color: #524f4e;
+            background: white;
+            box-shadow: 0 8px 15px rgba(0, 0, 0, .1);
+            transition: .3s;
+        }
+        .floating-button:hover {
+            background: #2EE59D;
+            box-shadow: 0 15px 20px rgba(46, 229, 157, .4);
+            color: white;
+            transform: translateY(-7px);
+        }
+        body {
+            font-family: 'Montserrat Alternates', sans-serif;
+        }
+        .post-wrap {
+            max-width: 1120px;
+            display: flex;    
+        }
+        .post-item {
+            padding: 15px;
+            cursor: pointer;
+        }
+        .post-item * {
+            transition: .3s linear;
+        }
+        .item-icon {
+            margin-bottom: 20px;
+        }
+        .item-icon2:before {
+            content: "";
+            color: black;
+            font-size: 50px;
+            line-height: 1;
+        }
+        .item-icon.photo:before {
+            content: "\f030";
+        }
+        .item-icon.video:before {
+            content: "\f03d";
+        }
+        .item-icon.gift:before {
+            content: "\f06b";
+        }  
+        .item-icon.tree:before {
+            content: "\f1bb";
+        }
+        .item-icon.anchor:before {
+            content: "\f13d";
+        }
+        .post-item:hover .item-icon, .post-item:hover .item-body h3, .post-item:hover .item-body p {
+            transform: translateY(-8px);
+        }
+        .item-body {
+            color: black;
+            font-size: 22px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .item-body h3 {
+            font-weight: 500;
+            margin-bottom: 15px;
+            transition-delay: .05s;
+        }
+        .item-body p {
+            transition-delay: .1s;
+        }
+        .item-footer {
+            padding-top: 15px;
+        }
+        .link {
+            text-decoration: none;
+            display: inline-block;
+            overflow: hidden;
+            position: relative;
+            padding-right: 30px;
+            font-size: 12px;
+            text-transform: uppercase;
+            font-weight: 600;
+            color: #F5E2CD;
+        }
+        .link:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            bottom: 0;
+            height: .150rem;
+            margin: auto;
+            background: black;
+            transform: scaleX(.2);
+            transform-origin: left center;
+            transition: .6s cubic-bezier(.6, .02, 0, 1);
+        }
+        .link span {
+            display: inline-block;
+            position: relative;
+            transform: translateX(-200%);
+            transition: .6s cubic-bezier(.6, .01, 0, 1);
+        }
+        .post-item:hover .link span {
+            transform: translateX(0%);
+        }
+        .post-item:hover .link:before {
+            transform-origin: right center;
+        }
+        @media (min-width: 768px) {
+            .post-item {
+                flex-basis: 50%;
+                flex-shrink: 0;
+            }
+        }
+        @media (min-width: 960px) {
+            .post-item {
+                flex-basis: 33.333333333%;
+            }
+        }
+    </style>
+        <div id="Bank">
+		    <a href="C:/Users/User/Documents/Kolya/Web/nyelisieiev.github.io/Kiev.bank/Kiev.bank2.html" class="floating-button"><span style="color: blue; font-family: 'Times New Roman', Times, serif; font-size: 25px;">Kyiv</span><span style="color: yellow; font-family: 'Times New Roman', Times, serif; font-size: 25px;">.</span><span style="color: green; font-family: 'Times New Roman', Times, serif; font-size: 25px;">bank</span></button></a>
+            <a href="#Credit" class="floating-button"><span style="color: black; font-family: 'Times New Roman', Times, serif; font-size: 23px;">Кредит</span></a>
+            <a href="#Money" class="floating-button"><span style="color: black; font-family: 'Times New Roman', Times, serif; font-size: 21px;">Заощадження</span></a>
+            <a href="#currency" class="floating-button"><span style="color: black; font-family: 'Times New Roman', Times, serif; font-size: 23px;">Спонсорство</span></a>
+            <a href="#Bonus" class="floating-button"><span style="color: black; font-family: 'Times New Roman', Times, serif; font-size: 23px;">Бонуси</span></a>
+            <a href="C:/Users/User/Documents/Kolya/Web/nyelisieiev.github.io/Kiev.bank/Operator.html" class="floating-button"><span style="color: black; font-family: 'Times New Roman', Times, serif; font-size: 23px;">Оператор</span></a>
+        </div>
+    </div>
+    <img src="C:/Users/User/Documents/Kolya/картинки/Kievphoto1.png" width="1550" height="500">
+    <div id="Credit" class="post-wrap">
+        <div class="box">
+        <div class="box first">
+        <div class="post-item">
+        <div class="item-icon group">
+        <div class="item-body">
+        <span style="font-size: 25px; color: black;"><h3>Кредит</h3></span>
+        <p>Користні кредити під маленькі відсотки.</p>
+        </div>
+        <div class="item-footer">
+        <a href="C:/Users/User/Documents/Kolya/Web/nyelisieiev.github.io/Kiev.bank/Credit.html" class="link"><span style="color: black; font-size: 18px;">Детальніше</span></a>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div id="Money" class="post-wrap">
+        <div class="box">
+        <div class="box second">
+        <div class="post-item">
+        <div class="item-icon group">
+        <div class="item-body">
+        <span style="font-size: 35;"><h3>Заощадження</h3></span>
+        <p>Стабільне накопиченя грошей під бажанні відсотки.</p>
+        </div>
+        <div class="item-footer">
+        <a href="C:/Users/User/Documents/Kolya/Web/nyelisieiev.github.io/Kiev.bank/Money.html" class="link"><span style="color: black; font-size: 18px;">Детальніше</span></a>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+    <div id="currency">
+        <label for="education"><span style="font-size: 18px;">Валюта</label>
+        <select name="education" id="education">
+            <option value="grn"><span style="font-size: 22px;">Гривня</span></option>
+            <option value="euro"><span style="font-size: 22px;">Євро</span></option>
+            <option value="dollar"><span style="font-size: 22px;">Доллар</span></option>
+            <option value="rub"><span style="font-size: 22px;">Фунт стерлінгів</span></option>
+            <option value="rub"><span style="font-size: 22px;">Рубль</span></option>
+        </select>
+    </div>
+    <div id="Help">
+        <label for="surname"><span style="font-size: 35; color: black;"><span style="font-size: 18px;">Спонсорство</span></label>
+        <input type="text" name="surname" id="surname" placeholder="" required>
+    </div>
+    <div id="Bonus" class="post-wrap">
+        <div class="box">
+        <div class="box third">
+        <div class="post-item">
+        <div class="item-icon group">
+        <div class="item-body">
+        <span style="font-size: 35;"><h3>Бонуси</h3></span>
+        <p>Користуйтеся Kyiv.bank, та отримуйте знижки в магазинах.</p>
+        </div>
+        <div class="item-footer">
+        <a href="C:/Users/User/Documents/Kolya/Web/nyelisieiev.github.io/Kiev.bank/Bonus.html" class="link"><span style="color: black; font-size: 18px;">Детальніше</span></a>
+        </div>
+        </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
